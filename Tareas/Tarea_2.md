@@ -1,24 +1,24 @@
 ```mermaid
-Diagram
-    Usuario ||--|{ Transaccion : Hace
+Diagram;
+    Usuario ||--|{ Transaccion : Hace;
 
-    Usuario }|--|{ Quiniela : "Crea o se une"
+    Usuario }|--|{ Quiniela : "Crea o se une";
 
-    Usuario ||--|{ Apuesta : Hace
+    Usuario ||--|{ Apuesta : Hace;
 
-    Transaccion ||--|| Usuario : "Deposita/Retira Dinero"
+    Transaccion ||--|| Usuario : "Deposita/Retira Dinero";
 
-    Apuesta ||--|| Usuario : "Deposita/Retira Dinero"
+    Apuesta ||--|| Usuario : "Deposita/Retira Dinero";
     
-    Partido ||--|{ Apuesta : Pertenece
+    Partido ||--|{ Apuesta : Pertenece;
 
-    Liga||--|{ Equipo : Pertenece
+    Liga||--|{ Equipo : Pertenece;
 
-    Liga||--|{ Partido : Pertenece
+    Liga||--|{ Partido : Pertenece;
     
-    Partido ||--|{ Equipo : Tiene
+    Partido ||--|{ Equipo : Tiene;
 
-    Equipo ||--|{ Jugador : Tiene
+    Equipo ||--|{ Jugador : Tiene;
 
    Usuario {
         int User_ID PK
