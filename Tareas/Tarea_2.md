@@ -1,7 +1,4 @@
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+erDiagram Tarea_2
+    Usuario ||--|{ Transaccion : Hace
 ```
