@@ -1,4 +1,4 @@
 ```mermaid
-erDiagram Tarea_2
+erDiagram
     Usuario ||--|{ Transaccion : Hace
 ```
