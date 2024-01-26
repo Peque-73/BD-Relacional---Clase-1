@@ -6,4 +6,11 @@ erDiagram
      Transaccion ||--|| Usuario : "Deposita/Retira Dinero"
     Apuesta ||--|| Usuario : "Deposita/Retira Dinero"
     Partido ||--|{ Apuesta : Pertenece
+    Liga||--|{ Equipo : Pertenece
+
+    Liga||--|{ Partido : Pertenece
+    
+    Partido ||--|{ Equipo : Tiene
+
+    Equipo ||--|{ Jugador : Tiene
 ```
