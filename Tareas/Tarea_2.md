@@ -27,13 +27,13 @@ erDiagram;
         float Dinero_Cuenta
         string Apuestas_Ganadas
         string Apuestas_Perdidas
-    }
+    };
 
     Transaccion {
         int Transaccion_ID PK
         string Tipo_Transaccion
         int User_ID
-    }
+    };
 
     Apuesta {
             int Apuesta_ID PK
@@ -43,7 +43,7 @@ erDiagram;
             float Multiplicador_Apuesta
             string Prediccion_Usuario(local-visita-empate)
             string Resultado_Juego(local-visita-empate)
-    }
+    };
 
     Equipo {
         int Equipo_ID PK
@@ -57,7 +57,7 @@ erDiagram;
         int Total_Goles_Concedidos
         int Total_Tarjetas_Rojas
         int Total_Tarjetas_Amarillas
-    }
+    };
 
     Liga {
         int Liga_ID PK
@@ -65,7 +65,7 @@ erDiagram;
         int Equipo_ID
         string Tabla_Goleo
         string Tabla_Menos_Goles_Recibidos
-    }
+    };
 
     Jugador {
         int Jugador_ID PK
@@ -76,7 +76,7 @@ erDiagram;
         int Goles_Concedidos
         int Tarjetas_Rojas
         int Tarjetas_Amarillas
-    }
+    };
 
     Partido {
         int Partido_ID PK
@@ -87,7 +87,7 @@ erDiagram;
         float Multiplicador_Empate
         float Multiplicador_Visita
         string Resultado_Juego(local-visita-empate)
-    }
+    };
 
     Quiniela {
         int Quiniela_ID PK
@@ -96,5 +96,5 @@ erDiagram;
         string Prediccion_Usuario(local-visita-empate)(todos_los_usuarios_y_partidos)
         int Total_Aciertos(Por_usuario)
         string Tabla_General_Participantes
-    }
+    };
 ```
