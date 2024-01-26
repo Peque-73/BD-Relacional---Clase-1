@@ -1,5 +1,5 @@
 ```mermaid
-erDiagram
+erDiagram Tarea_2
     Usuario ||--|{ Transaccion : Hace
 
     Usuario }|--|{ Quiniela : "Crea o se une"
