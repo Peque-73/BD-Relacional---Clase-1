@@ -1,3 +1,9 @@
+# Tarea #2 Clase BDR MCD
+## Instrucciones
+1. Convierte tu base de datos no estructurada en un modelo entidad-relacion, representandolo con un diagrama entidad-relacion. Usa nodos con figuras correctas y aristas claramente señaladas con los numeros correspondientes para las relaciones.
+2. Muestra el dominio de los atributos.
+3. Subir esta descripcion en un archivo markdown.
+
 ```mermaid
 erDiagram
     Usuario ||--|{ Transaccion : Hace
