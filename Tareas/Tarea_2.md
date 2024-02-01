@@ -97,3 +97,5 @@ Transaccion {
         string Tabla_General_Participantes
     }
 ```
+
+### [Página principal](https://github.com/Peque-73/BD-Relacional---Clase-1)
