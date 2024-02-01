@@ -4,6 +4,9 @@
 2. Muestra el dominio de los atributos.
 3. Subir esta descripcion en un archivo markdown.
 
+### 31/01/2024 ACTUALIZACIÓN DE LA TAREA: SE REALIZÓ EL [DIAGRAMA ENTIDAD-RELACIÓN](https://www.figma.com/file/xMHG5oFJbuwDe1O2xPSb91/Diagrama-entidad-relaci%C3%B3n-Tarea_2?type=whiteboard&node-id=0%3A1&t=MjyxMJHcZJcybEsG-1)
+
+
 ```mermaid
 erDiagram
     Usuario ||--|{ Transaccion : Hace
