@@ -25,6 +25,26 @@ Jugador (<u>Jugador_ID</u>, Equipo_ID, Juegos_Jugados, Minutos_Jugados, Goles_An
 
 Liga (<u>Liga_ID</u>, Tabla_General, Equipo_ID, Tabla_Goleo, Tabla_Menos_Goles_Recibidos)
 
+Usuario_Hace_Transacción (User_ID, Transacción_ID, Tipo de Transacción, Monto)
+
+Transacción_Deposita/Retira_Usuario(User_ID, Transacción_ID, Tipo de Transacción, Monto)
+
+Usuario_Crea/Une_Quiniela(User_ID, Quiniela_ID)
+
+Usuario_Hace_Apuesta(User_ID, Apuesta_ID, Monto_Apuesta)
+
+Apuesta_Deposita/Retira_Usuario(User_ID, Apuesta_ID, Monto)
+
+Apuesta_Pertenece_Partido(Apuesta_ID, Partido_ID)
+
+Partido_Pertenece_Liga(Partido_ID, Liga_ID)
+
+Partido_Tiene_Equipo(Partido_ID, Equipo_ID(Local), Equipo_ID(Visita))
+
+Equipo_Pertenece_Liga(Equipo_ID, Liga_ID)
+
+Equipo_Tiene_Jugador(Equipo_ID, Jugador_ID)
+
 2. A continuación se muestra el diagrama relacional, como en la tarea anterior se me hizo la observación de que hice un diagrama relacional en vez de un diagrama entidad-relación, actualicé la [tarea 2](https://github.com/Peque-73/BD-Relacional---Clase-1/blob/main/Tareas/Tarea_2.md) para que mostrara un diagrama entidad-relación y debajo dejo el diagrama hecho en la clase pasada:
 
 ```mermaid
@@ -52,6 +72,7 @@ Transaccion {
         int Transaccion_ID PK
         string Tipo_Transaccion
         int User_ID
+        int Monto
     }
 
     Apuesta {
