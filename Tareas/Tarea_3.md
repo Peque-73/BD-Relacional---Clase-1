@@ -139,4 +139,22 @@ Transaccion {
     }
 ```
 
+3. A continuación se listan 4 posibles operaciones de hacer:
+
+- $\pi$<sub>User_ID, Partido_ID</sub>  ($\sigma$ (Monto_Apuesta >= 10,000)  $\hat{}$ (Predicción_Usuario = Resultado_Juego)(Usuario X Apuesta)
+
+La operación anterior nos describe la manera de obtener los ID de los usuarios que han apostado $10,000 o más pesos y han ganado la apuesta y tambien nos obtiene el partido en especifico en el que se hizo la apuesta. De esta manera podemos tener una lista de los usuarios que mas ganancias tienen.
+
+- $\pi$<sub>Usuario_ID, Monto</sub>  ($\sigma$ (Tipo_Transacción = 'Retiro')  $\hat{}$ (Monto >= 15,000) $\hat{}$ (Apuestas_Ganadas > Apuestas_Perdidas)(Usuario X Transacción)
+
+La operación nos permite tener el ID de los usuarios que tengan retiros por cantidades mayores a $15,000 así como el monto retirado por transacción siempre y cuando el usuario tenga mas apuestas ganadas que perdidas. Esto nos puede servir para detectar usuarios que tal vez no sean de beneficio economico para la pagina ya que ganan más dinero del que pierden, o tal vez podría ser indicador de algún fraude.
+
+- $\pi$<sub>Usuario_ID</sub>  ($\sigma$ (Apuesta_ID = null)  $\hat{}$ (Dinero_Cuenta = 0)(Usuario X Transacción)
+
+La operacion anterior nos obtiene los ID de los usuarios que no han hecho ninguna apuesta y que no tienen dinero en su cuenta. Esta operación nos puede servir para identificar usuarios inactivos que tal vez solo hicieron una cuenta por curiosidad.
+
+- $\pi$<sub>Jugador_ID, Goles_Anotados</sub>  ($\sigma$ (Equipo_ID = Equipo_ID(Local))  $\hat{}$ (Goles_Anotados > 0)
+
+La operacion anterior nos permite obtener a los jugadores que han marcado gol y la cantidad de goles que llevan del equipo local. Esto nos puede ser util para mostrar información relevante a los usuarios sobre las apuestas que hicieron.
+
 ### [Página principal](https://github.com/Peque-73/BD-Relacional---Clase-1)
