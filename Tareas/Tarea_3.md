@@ -149,11 +149,11 @@ La operación anterior nos describe la manera de obtener los ID de los usuarios 
 
 La operación nos permite tener el ID de los usuarios que tengan retiros por cantidades mayores a $15,000 así como el monto retirado por transacción siempre y cuando el usuario tenga mas apuestas ganadas que perdidas. Esto nos puede servir para detectar usuarios que tal vez no sean de beneficio economico para la pagina ya que ganan más dinero del que pierden, o tal vez podría ser indicador de algún fraude.
 
-- $\pi$<sub>Usuario_ID</sub>  ($\sigma$ (Apuesta_ID = null)  $\hat{}$ (Dinero_Cuenta = 0)(Usuario X Transacción)
+- $\pi$<sub>Usuario_ID</sub>  ($\sigma$ (Apuesta_ID = null)  $\hat{}$ (Dinero_Cuenta = 0)(Usuario X Apuesta)
 
 La operacion anterior nos obtiene los ID de los usuarios que no han hecho ninguna apuesta y que no tienen dinero en su cuenta. Esta operación nos puede servir para identificar usuarios inactivos que tal vez solo hicieron una cuenta por curiosidad.
 
-- $\pi$<sub>Jugador_ID, Goles_Anotados</sub>  ($\sigma$ (Equipo_ID = Equipo_ID(Local))  $\hat{}$ (Goles_Anotados > 0)
+- $\pi$<sub>Jugador_ID, Goles_Anotados</sub>  ($\sigma$ (Equipo_ID = Equipo_ID(Local))  $\hat{}$ (Goles_Anotados > 0)(Apuesta X Equipo X Jugador)
 
 La operacion anterior nos permite obtener a los jugadores que han marcado gol y la cantidad de goles que llevan del equipo local. Esto nos puede ser util para mostrar información relevante a los usuarios sobre las apuestas que hicieron.
 
