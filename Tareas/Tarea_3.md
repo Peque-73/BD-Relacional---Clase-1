@@ -87,7 +87,8 @@ Transaccion {
 
     Equipo {
         int Equipo_ID PK
-        int Jugador_ID
+        int Liga_ID
+        string Nombre_Equipo
         int Partidos_Ganados
         int Partidos_Perdidos
         int Ganados_ultimos_5_juegos
@@ -101,14 +102,12 @@ Transaccion {
 
     Liga {
         int Liga_ID PK
-        string Tabla_General
-        int Equipo_ID
-        string Tabla_Goleo
-        string Tabla_Menos_Goles_Recibidos
+        string Nombre_Liga
     }
 
     Jugador {
         int Jugador_ID PK
+        string Nombre_Jugador
         int Equipo_ID
         int Juegos_Jugados
         int Minutos_Jugados
@@ -134,8 +133,6 @@ Transaccion {
         int User_ID(Todos_Los_Participantes)
         int Partido_ID(Todos_Los_Partidos)
         string Prediccion_Usuario(local-visita-empate)(todos_los_usuarios_y_partidos)
-        int Total_Aciertos(Por_usuario)
-        string Tabla_General_Participantes
     }
 ```
 
