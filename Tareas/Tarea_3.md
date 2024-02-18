@@ -13,17 +13,17 @@ Usuario (<u>User_ID</u>, Nombre, Tarjeta, Dinero_Cuenta, Apuestas_Ganadas, Apues
 
 Tansacción (<u>Transacción_ID</u>, Tipo_Transacción, User_ID)
 
-Quiniela (<u>Quiniela_ID</u>, User_ID, Partido_ID, Predicción_Usuario,Total_Aciertos, Tabla_General_Participantes)
+Quiniela (<u>Quiniela_ID</u>, User_ID, Partido_ID, Predicción_Usuario)
 
 Apuesta (<u>Apuesta_ID</u>, User_ID, Partido_ID, Monto_Apuesta, Predicción_Usuario(Local-Visita-Empate), Resultado_Juego(Local-Visita-Empate))
 
-Equipo (<u>Equipo_ID</u>, Jugador_ID, Partidos_Ganados, Partidos_Perdidos, Ganados_ultimos_5_juegos, Empatados_ultimos_5_juegos, Perdidos_ultimos_5_juegos)
+Equipo (<u>Equipo_ID</u>, Nombre_Equipo, Liga_ID, Puntos, Partidos_Ganados, Partidos_Perdidos, Ganados_ultimos_5_juegos, Empatados_ultimos_5_juegos, Perdidos_ultimos_5_juegos)
 
 Partido (<u>Partido_ID</u>, Liga_ID, Equipo_ID(Local), Equipo_ID(Visita), Multiplicador_Local, Multiplicador_Empate, Multiplicador_Visita, Resultado)
 
-Jugador (<u>Jugador_ID</u>, Equipo_ID, Juegos_Jugados, Minutos_Jugados, Goles_Anotados, Goles_concedidos, Tarjetas_Rojas, Tarjetas_Amarillas)
+Jugador (<u>Jugador_ID</u>, Nombre_Jugador, Equipo_ID, Juegos_Jugados, Minutos_Jugados, Goles_Anotados, Goles_concedidos, Tarjetas_Rojas, Tarjetas_Amarillas)
 
-Liga (<u>Liga_ID</u>, Tabla_General, Equipo_ID, Tabla_Goleo, Tabla_Menos_Goles_Recibidos)
+Liga (<u>Liga_ID</u>, Nombre_Liga)
 
 Usuario_Hace_Transacción (User_ID, Transacción_ID, Tipo de Transacción, Monto)
 
