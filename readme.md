@@ -10,3 +10,4 @@ Repositorio para la clase de Base de Datos Relacionales de la Maestría en Cienc
 - [Tarea 3](https://github.com/Peque-73/BD-Relacional---Clase-1/blob/main/Tareas/Tarea_3.md)
 - [Tarea 4](https://github.com/Peque-73/BD-Relacional---Clase-1/blob/main/Tareas/Tarea_4.sql)
 - [Tarea 5](https://github.com/Peque-73/BD-Relacional---Clase-1/blob/main/Tareas/Tarea_5.sql)
+- [Tarea 6](https://github.com/Peque-73/BD-Relacional---Clase-1/blob/main/Tareas/Tarea_6.md)
